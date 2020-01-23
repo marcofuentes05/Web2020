@@ -4,10 +4,6 @@ html , body{
     font-size :15px;
 }
 
-body{
-    /*background-color: white;*/
-}
-
 .flex-container-header{
     align-items: center;
     background-color: white;
@@ -59,7 +55,7 @@ body{
 
 .grey{
     color: grey;
-    align-content: flex-end;
+    /*align-content: flex-end;*/
 }
 
 .title{
@@ -180,11 +176,11 @@ body{
 }
 
 input.rounded {
-    margin: 10px;
-    border: 1px solid #ccc;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
     /*
     -moz-box-shadow: 2px 2px 3px #666;
     -webkit-box-shadow: 2px 2px 3px #666;
@@ -208,17 +204,22 @@ input.rounded {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    width: 100%;
+    padding-right: 0px;
 }
 
 .grad{
     display: flex;
     flex-direction: row;
     font-size: 30px;
+    width: 100%;
+    border-bottom: 1px solid grey;
 }
 
 .first-grade{
     color: lightseagreen;
     margin: 20px;
+    align-self: center;
 }
 
 .pencil{
@@ -230,4 +231,127 @@ input.rounded {
     color: darkred;
     align-self: center;
     margin-left: 10px;
+}
+
+.space{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom:0px ;
+    flex-grow: 2;
+    /*padding: 100px;*/
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*margin-left: 210px;*/
+    height: fit-content;
+    align-content: center;
+    justify-content: center;
+}
+
+.button01{
+    font-size: 15px;
+    color: white;
+    border-radius: 30px;
+    background-color: #74c26d;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    align-content: center;
+    justify-content: center;
+}
+
+.button02{
+    font-size: 15px;
+    color: white;
+    border-radius: 30px;
+    background-color: lightseagreen;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    align-content: center;
+    justify-content: center;
+}
+
+.idioma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.spanish{
+    margin: 10px;
+    color: lightseagreen;
+}
+
+.spanish>i{
+    margin-left: 10px;
+}
+
+.english>i{
+    margin-left: 10px;
+}
+
+.english{
+    margin: 10px;
+}
+
+.flex-container-libros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.book {
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    display: block;
+    /*margin-bottom: 8px;*/
+    overflow: hidden;
+    width: 226px;
+}
+
+.book__image {
+    background-position: center;;
+    background-size: cover;
+    height: 280px;
+}
+
+.book__footer {
+    background: white;
+    padding: 16px;
+    position: relative;
+}
+
+.book__title {
+    color: #019c97;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.book__size {
+    color: #777777;
+    font-size: 12px;
+}
+
+.book__actions {
+    bottom: 0;
+    height: 56px;
+    position: absolute;
+    right: 0;
+    width: 18px;
+}
+
+.book__actions>i{
+    margin-top: 10px;
+    align-self: center;
+    justify-self: center;
+    font-size: 30px;
+    color: gray;
 }
